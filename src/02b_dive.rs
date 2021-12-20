@@ -13,21 +13,17 @@ fn main() {
     let mut horiz: i64 = 0;
     let mut depth: i64 = 0;
     let mut aim: i64 = 0;
-    loop {
-        if let Ok((verb, dist)) = parse_input() {
-            println!("{}", verb);
-            if verb == "forward" {
-                horiz = horiz + dist;
-                depth = depth + aim * dist;
-            }
-            if verb == "up" {
-                aim = aim - dist;
-            }
-            if verb == "down" {
-                aim = aim + dist;
-            }
-        } else {
-            break;
+    while let Ok((verb, dist)) = parse_input() {
+        println!("{}", verb);
+        if verb == "forward" {
+            horiz += dist;
+            depth += aim * dist;
+        }
+        if verb == "up" {
+            aim -= dist;
+        }
+        if verb == "down" {
+            aim += dist;
         }
     }
     println!("{}", horiz * depth);

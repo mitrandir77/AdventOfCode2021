@@ -16,7 +16,7 @@ fn main() {
             let sum: i64 = window.iter().sum();
             if let Some(last_sum) = last_sum {
                 if sum > last_sum {
-                    counter = counter + 1;
+                    counter += 1;
                 }
             }
             let _pop = window.pop_front().unwrap();

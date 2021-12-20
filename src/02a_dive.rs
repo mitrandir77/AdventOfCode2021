@@ -12,20 +12,16 @@ fn parse_input() -> Result<(String, i64), Error> {
 fn main() {
     let mut horiz: i64 = 0;
     let mut depth: i64 = 0;
-    loop {
-        if let Ok((verb, dist)) = parse_input() {
-            println!("{}", verb);
-            if verb == "forward" {
-                horiz = horiz + dist;
-            }
-            if verb == "up" {
-                depth = depth - dist;
-            }
-            if verb == "down" {
-                depth = depth + dist;
-            }
-        } else {
-            break;
+    while let Ok((verb, dist)) = parse_input() {
+        println!("{}", verb);
+        if verb == "forward" {
+            horiz += dist;
+        }
+        if verb == "up" {
+            depth -= dist;
+        }
+        if verb == "down" {
+            depth += dist;
         }
     }
     println!("{}", horiz * depth);
