@@ -1,0 +1,38 @@
+[package]
+name = "AdventOfCode2021"
+version = "0.1.0"
+authors = ["Mateusz Kwapich <mateusz@kwapich.it>"]
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.34"
+maplit = "1.0.2"
+multiset = "0.0.5"
+regex = "1.4.2"
+itertools = "0.9.0"
+text_io = "0.1.9"
+factor = "0.4.0"
+
+[[bin]]
+name = "01a_sonar_sweep"
+path = "src/01a_sonar_sweep.rs"
+
+[[bin]]
+name = "01b_sonar_sweep"
+path = "src/01b_sonar_sweep.rs"
+
+[[bin]]
+name = "02a_dive"
+path = "src/02a_dive.rs"
+
+[[bin]]
+name = "02b_dive"
+path = "src/02b_dive.rs"
+
+[[bin]]
+name = "17a_trick_shot"
+path = "src/17a_trick_shot.rs"
+
+[[bin]]
+name = "17b_trick_shot"
+path = "src/17b_trick_shot.rs"
