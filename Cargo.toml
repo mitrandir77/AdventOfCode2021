@@ -11,6 +11,7 @@ multiset = "0.0.5"
 regex = "1.4.2"
 itertools = "0.9.0"
 text_io = "0.1.9"
+lazy_static = "1.4.0"
 
 [[bin]]
 name = "01a_sonar_sweep"
@@ -35,6 +36,10 @@ path = "src/17a_trick_shot.rs"
 [[bin]]
 name = "17b_trick_shot"
 path = "src/17b_trick_shot.rs"
+
+[[bin]]
+name = "19a_beacon_scanner"
+path = "src/19a_beacon_scanner.rs"
 
 [[bin]]
 name = "20a_trench_map"
