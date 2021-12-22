@@ -42,6 +42,10 @@ name = "19a_beacon_scanner"
 path = "src/19a_beacon_scanner.rs"
 
 [[bin]]
+name = "19b_beacon_scanner"
+path = "src/19b_beacon_scanner.rs"
+
+[[bin]]
 name = "20a_trench_map"
 path = "src/20a_trench_map.rs"
 
