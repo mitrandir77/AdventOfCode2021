@@ -30,6 +30,14 @@ name = "02b_dive"
 path = "src/02b_dive.rs"
 
 [[bin]]
+name = "03a"
+path = "src/03a.rs"
+
+[[bin]]
+name = "03b"
+path = "src/03b.rs"
+
+[[bin]]
 name = "17a_trick_shot"
 path = "src/17a_trick_shot.rs"
 
